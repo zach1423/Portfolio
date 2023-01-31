@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        title {text-align: center;}
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        p {text-align: center;}
+
+        /* Create two equal columns that floats next to each other */
+        .columnleft {
+            float: left;
+            width: 49.66% ;
+            padding: 0px;
+            height: 250px; /* Should be removed. Only for demonstration */
+            border: 2px solid black;
+            
+        }
+
+        .photo {
+            text-align: center;
+            
+            
+        }
+
+        .columnright {
+            float: right;
+            width: 49.66%;
+            padding: 0px;
+            height: 250px; /* Should be removed. Only for demonstration */
+            border: 2px solid black;
+            
+        }
+
+        .links {
+            float: left;
+            width: 30%;
+            margin: 1.5%;
+            height: 100px; /* Should be removed. Only for demonstration */
+            
+            transition-duration: 0.4s;
+            cursor: pointer;
+            
+        }
+        .links:hover {
+            background-color: white; 
+            color: black; 
+            border: 1px solid black;
+        }
+
+
+        /* Clear floats after the columns */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+     </style>
+
+    <head>
+        <title>Portfolio</title>
+    </head>
+
+    <body style="background-color:rgba(119, 19, 19, 0.781);">
+
+        <h1 style="background-color:rgb(255, 255, 255);">Tyler Z Burton</h1>
+        <h2>Software Developer</h2>
+
+        <div class="row">
+            <div class="columnleft" style="background-color:rgb(81, 112, 180);">
+              <h2 style="background-color:rgb(255, 255, 255);">About me</h2>
+              <p>Hello my name is Tyler Burton. <br>
+                  I have studied computer programming for 5 years <br>
+                  at Georgia military college and Kennesaw State University.
+              </p>  
+            </div>
+            
+            
+              <div class="photo">
+                <a style="vertical-align:middle" href="https://github.com/zach1423"><img src="https://avatars.githubusercontent.com/u/70348930?v=4" alt="Photo of me" style="width:250px;height:250px;" ></a>
+              </div>
+              
+            
+            
+        </div>
+
+        
+        <div class="row"> 
+            <div class="columnright" style="background-color:rgb(81, 112, 180);">
+              <h2 style="background-color:rgb(255, 255, 255);">Projects</h2>
+              <p>Here are some projects I have done with links to the github page they are on.</p>
+
+                <div class="row">
+
+                    <div class="links" style="background-color:rgb(141, 141, 141);" onclick="window.open('https://github.com/zach1423/mom-pop-shop','_blank')">
+                        <h2 style="background-color:rgb(255, 255, 255);">C#</h2>
+                        <p>Mom and Pop pizza shop</p>  
+                      </div>
+
+                      <div class="links" style="background-color:rgb(141, 141, 141);" onclick="window.open('https://github.com/zach1423/Senior-Project-' , '_blank')">
+                        <h2 style="background-color:rgb(255, 255, 255);">Java</h2>
+                        <p>Java to Python Translator</p>  
+                      </div>
+
+                      <div class="links"  style="background-color:rgb(141, 141, 141);" onclick="window.open('https://github.com/zach1423/BASIC_Interpreter' , '_blank')">
+                        <h2 style="background-color:rgb(255, 255, 255);">C++</h2>
+                        <p>BASIC Interpretor</p>  
+                      </div>
+
+                </div>
+
+
+            </div>
+            <p>photo Here</p>
+
+          </div>
+
+          <div class="row">    
+            <div class="columnleft" style="background-color:rgb(81, 112, 180);">
+              <h2 style="background-color:rgb(255, 255, 255);">Contact Info</h2>
+              <p>Email: burtonzachery61@gmail.com <br>
+                Phone number: 404.924.9275 <br>
+                Github: <a href="https://github.com/zach1423">https://github.com/zach1423</a>
+            </p>
+            </div>
+
+            <p>photo Here</p>
+
+          </div>
+        
+        </body>
+
+</html>
